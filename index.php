@@ -13,6 +13,12 @@
     <br>
     Lunghezza:<?php  strlen($string);
     echo(strlen($string))?>
+    <br>
+    <?php $stringBad= "Lorem $_GET('badword') dolor sit amet, consectetur adipiscing elit.";
+        $newString= str_replace("$_GET('badword')", "****",
+       $stringBad);
+       echo("$newString")
+    ?>
     </h1>
 </body>
 </html>
