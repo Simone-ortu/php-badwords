@@ -12,10 +12,10 @@
     <h1>
     <!-- creo la stringa, la stampo -->
         <?php $string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-        echo ("$string") ?>
+        echo ($string) ?>
         <br>
         <!-- stampo la lunghezza della stringa -->
-        Lunghezza:<?php strlen($string);
+        Lunghezza: <?php strlen($string);
                     echo (strlen($string)) ?>
         <br>
         <!-- aggiungo il comando $_GET e lo cambio tramite str_replace, trasformandolo in ***** -->
@@ -25,7 +25,7 @@
             "****",
             $stringBad
         );
-        echo ("$newString")
+        echo ($newString)
         ?>
     </h1>
 </body>
