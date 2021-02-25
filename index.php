@@ -21,7 +21,7 @@
         <!-- aggiungo il comando $_GET e lo cambio tramite str_replace, trasformandolo in ***** -->
         <?php $stringBad = "Lorem $_GET('badword') dolor sit amet, consectetur adipiscing elit.";
         $newString = str_replace(
-            "$_GET('badword')",
+            "$_GET(badword)",
             "****",
             $stringBad
         );
